@@ -19,3 +19,11 @@ data.forEach(function(UFOinfo) {
       cell.text(value);
     });
   });
+ // Getting a reference to the button on the page with the id property set to `click-me`
+var button = d3.select("#click-me");
+// We can use d3 to see the object that dispatched the event inline
+button.on("click", function() {
+    console.log("Hi, a button was clicked!");
+    console.log(d3.event.target);
+  });
+  
