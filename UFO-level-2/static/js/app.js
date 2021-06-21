@@ -51,7 +51,7 @@ button.on("click", function() {
 // Function => Using multiple input tags to set multiple filters and search for UFO sightings
 
 // Create a date/time filtering function
-function selectdatetime(values) {
+function selectvalues(values) {
     //console.log(input.node().value);
     return values.datetime == inputdatetm.node().value && values.city == inputcity.node().value && values.state == inputstate.node().value &&
     values.country == inputcountry.node().value && values.shape == inputshape.node().value;
