@@ -28,7 +28,7 @@ button.on("click", function() {
     
     tbody.html("");
     var filteredata = data.filter(selectdatetime);
-    console.log(filteredata);
+    //console.log(filteredata);
     filteredata.forEach(function(UFOinfo) {
         //console.log(UFOinfo);
         var row = tbody.append("tr");
@@ -43,6 +43,6 @@ button.on("click", function() {
   });
 // Create a custom filtering function
 function selectdatetime(datetm) {
-    console.log(input.node().value);
+    //console.log(input.node().value);
     return datetm.datetime == input.node().value;
 }
